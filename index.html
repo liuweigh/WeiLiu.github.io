@@ -1,288 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-
-    <style type="text/css">
-        /*取消文本的下划线*/
-        a{
-            text-decoration: none;  /*超链接文办的下划线去掉*/
-        }
-
-        /*设置整个网页的边框*/
-        #page{
-            border: 1px solid black;
-        }
-
-        /*设置logo*/
-        #logo{
-            height: 55px;
-            overflow: hidden;  /*清除浮动   只要超出这个高度就会隐藏掉 */
-            border: 1px solid black;
-            margin: 1px;
-        }
-
-        /*设置logo里的超链接*/
-        .kop{
-            float:right;
-            width: 80px;
-            height: 50px;   /*块元素的高*/
-            text-align: center;
-            line-height:50px;   /*行高  字体上下居中*/
-            position: relative;  /*相对定位*/
-            top: -90px;
-        }
-
-        /*设置logo中的两个图片*/
-        .picture1{
-            padding-left: 50px;
-        }
-        .pictrue2{
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            top: -55px;
-        }
-
-        /*设置菜单的背景高宽*/
-        #menu{
-            background-color: black;
-            height: 35px;
-            padding-top: 8px;
-            padding-left: 10px;
-            border: 1px solid black;
-            margin: 1px;
-        }
-
-        /*两个段落标签、正品保障和轮播图的边框设置*/
-        #label,
-        #goods,
-        #play,
-        #advisement{
-            border: 1px solid black;
-            margin: 1px;
-        }
-
-        /*表示最新商品和最热商品右半部分的整体*/
-        .right{
-            position:absolute;  /*绝对定位*/
-            top:40px;
-        }
-
-        /*表示整个最新商品和最热商品的框架*/
-        .content{
-            width:100%;
-            height:540px;
-            position:relative;    /*相对定位*/
-            border: 1px solid black;
-            margin: 1px;
-        }
-
-        /*将最新商品和最热商品的分层为上下两个部分*/
-        .right_top,
-        .right_bottom{
-            float:right;   /*全部浮动到右边*/
-        }
-
-        /*用列标的形式表示商品电饭煲*/
-        ul{
-            list-style: none;  /*去掉列表前的标识符*/
-            float: right;
-            margin-right: 30px;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>黑马旅游网</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<table>
-    <div id="page">
-        <!--存放logo部分-->
-        <div id="logo">
-            <img src="web/img/logo.jpg" class="picture1"/>
-            <img src="../img/header.jpg" class="pictrue2"/>
-            <a href="#" class="kop"><font size="3">登录</font></a>
-            <a href="#" class="kop"><font size="3">注册</font></a>
-            <a href="#" class="kop"><font size="3">购物车</font></a>
-        </div>
-
-        <!--菜单部分-->
-        <div id="menu">
-             <a href="#"><font color="white" size="4">首页</font></a> 
-             <a href="#"><font color="white" size="4">手机数码</font></a> 
-             <a href="#"><font color="white" size="4">家用电器</font></a> 
-             <a href="#"><font color="white" size="4">生活用品</font></a> 
-             <a href="#"><font color="white" size="4">电脑办公</font></a> 
-        </div>
-
-        <!--轮播图-->
-        <div id="play">
-            <img src="../img/1.jpg" width="100%"/>
-        </div>
-
-        <!--热门商品-->
-        <div class="content">
-            <div class="top">
-                <font size="6">热门商品</font>
-                <img src="../img/title2.jpg" />
-            </div>
-
-            <div class="left">
-                <img src="../img/big01.jpg" width="210px"/>
-            </div>
-
-            <div class="right">
-                <div class="right_top">
-                    <img src="../img/middle01.jpg" />
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
+	<!--引入头部-->
+    <div id="header"></div>
+    <!-- banner start-->
+    <section id="banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner_1.jpg" alt="">
                 </div>
-                <div class="right_bottom">
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
+                <div class="item">
+                    <img src="images/banner_2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/banner_3.jpg" alt="">
                 </div>
             </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
         </div>
-
-        <!--广告-->
-        <div id="advisement" >
-            <img src="../img/ad.jpg" width="100%"/>
-        </div>
-
-        <!--最新商品-->
-        <div class="content">
-            <div class="top">
-                <font size="6">热门商品</font>
-                <img src="../img/title2.jpg" />
-            </div>
-
-            <div class="left">
-                <img src="../img/big01.jpg" width="210px"/>
-            </div>
-
-            <div class="right">
-                <div class="right_top">
-                    <img src="../img/middle01.jpg" />
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
+    </section>
+    <!-- banner end-->
+    <!-- 旅游 start-->
+    <section id="content">
+         <!-- 黑马精选start-->
+        <section class="hemai_jx">
+            <div class="jx_top">
+                <div class="jx_tit">
+                    <img src="images/icon_5.jpg" alt="">
+                    <span>黑马精选</span>
                 </div>
-                <div class="right_bottom">
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
-                    <ul>
-                        <li><img src="../img/small08.jpg"  /></li>
-                        <li><a href="#">电饭煲</a></li>
-                        <li>200¥</li>
-                    </ul>
+                <!-- Nav tabs -->
+                <ul class="jx_tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <span></span>
+                        <a href="#popularity" aria-controls="popularity" role="tab" data-toggle="tab">人气旅游</a>
+                    </li>
+                    <li role="presentation">
+                        <span></span>
+                        <a href="#newest" aria-controls="newest" role="tab" data-toggle="tab">最新旅游</a>
+                    </li>
+                    <li role="presentation">
+                        <span></span>
+                        <a href="#theme" aria-controls="theme" role="tab" data-toggle="tab">主题旅游</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jx_content">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="popularity">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_4.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_4.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_4.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_4.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="newest">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="theme">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!--正品保障-->
-        <div id="goods">
-            <img src="../img/footer.jpg" width="100%"/>
-        </div>
-        <!--两个段落标签-->
-        <div align="center" id="label">
-            <p>
-                <a href="#">关于我们</a>  
-                <a href="#">联系我们</a>  
-                <a href="#">招贤纳士</a>  
-                <a href="#">法律声明</a>  
-                <a href="#">友情链接</a>  
-            </p>
-            <p>
-                Copyright<sup>&reg;</sup>西部开源<sup>&copy;</sup>
-            </p>
-        </div>
-    </div>
-
-</table>
+        </section>
+        <!-- 黑马精选end-->
+        <!-- 国内游 start-->
+        <section class="hemai_jx">
+            <div class="jx_top">
+                <div class="jx_tit">
+                    <img src="images/icon_6.jpg" alt="">
+                    <span>国内游</span>
+                </div>
+            </div>
+            <div class="heima_gn">
+                <div class="guonei_l">
+                    <img src="images/guonei_1.jpg" alt="">
+                </div>
+                <div class="guone_r">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+									<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 国内游 end-->
+        <!-- 境外游 start-->
+        <section class="hemai_jx">
+            <div class="jx_top">
+                <div class="jx_tit">
+                    <img src="images/icon_7.jpg" alt="">
+                    <span>境外游</span>
+                </div>
+            </div>
+            <div class="heima_gn">
+                <div class="guonei_l">
+                    <img src="images/jiangwai_1.jpg" alt="">
+                </div>
+                <div class="guone_r">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+									<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/jiangxuan_4.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 境外游 end-->
+    </section>
+    <!-- 旅游 end-->
+   <!--导入底部-->
+    <div id="footer"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--导入布局js，共享header和footer-->
+    <script type="text/javascript" src="js/include.js"></script>
 </body>
 </html>
