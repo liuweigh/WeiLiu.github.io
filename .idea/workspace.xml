@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79b1bf8c-52d3-4747-970b-112fdd5f9e86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576842050222</updated>
-      <workItem from="1576842052710" duration="2635000" />
+      <workItem from="1576842052710" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="20:31">
       <created>1576845102889</created>
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576845102889</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20:45">
+      <created>1576845921025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576845921025</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,13 +154,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20:31" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:31" />
+    <MESSAGE value="20:45" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:45" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1576845102236">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1576846194810">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576845102236" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576846194810" />
     <state x="421" y="89" key="FileChooserDialogImpl" timestamp="1576845331897">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -210,10 +218,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="144" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1576845890805" />
-    <state x="233" y="81" key="Vcs.Push.Dialog.v2" timestamp="1576845279053">
+    <state x="233" y="81" key="Vcs.Push.Dialog.v2" timestamp="1576845929270">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="81" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576845279053" />
+    <state x="233" y="81" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576845929270" />
     <state x="435" y="147" key="git4idea.merge.GitMergeDialog" timestamp="1576845187569">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
